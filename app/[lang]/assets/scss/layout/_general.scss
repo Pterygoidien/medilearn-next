@@ -1,0 +1,77 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.logo {
+    width: 68px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+%container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    @extend %container;
+    max-width: var(--screen-5xl);
+    padding: 0 1rem;
+    overflow-x: hidden;
+
+}
+
+.container-xl {
+    @extend .container;
+    max-width: var(--screen-6xl);
+}
+
+
+section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+
+.bg--primary {
+    background-color: var(--primary-color);
+}
+
+.bg--primary-darken {
+    background-color: darken($primary-color, 15%);
+}
+
+.bg--primary-lighten {
+    background-color: lighten($primary-color, 35%);
+}
+
+.bg--secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg--secondary-darken {
+    background-color: darken($secondary-color, 15%);
+}
+
+.bg--tertiary {
+    background-color: var(--tertiary-color);
+}
+
+.bg--tertiary-darken {
+    background-color: darken($tertiary-color, 15%);
+}
+
+/*temporary*/
+
+#socials svg {
+    fill: #fff;
+}

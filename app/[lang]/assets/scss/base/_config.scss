@@ -1,0 +1,32 @@
+$primary-color: #133696;
+$secondary-color: #F7F7F7;
+$tertiary-color: #000;
+
+
+/* Screen sizes */
+$screen-sm: 320px;
+$screen-md: 480px;
+$screen-lg: 768px;
+$screen-xl: 992px;
+$screen-2xl: 1140px;
+$screen-3xl: 1320px;
+$screen-4xl: 1538px;
+$screen-5xl: 1920px;
+$screen-6xl: 2400px;
+$screen-7xl: 2560px;
+
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --tertiary-color: #{$tertiary-color};
+    --screen-sm: #{$screen-sm};
+    --screen-md: #{$screen-md};
+    --screen-lg: #{$screen-lg};
+    --screen-xl: #{$screen-xl};
+    --screen-2xl: #{$screen-2xl};
+    --screen-3xl: #{$screen-3xl};
+    --screen-4xl: #{$screen-4xl};
+    --screen-5xl: #{$screen-5xl};
+    --screen-6xl: #{$screen-6xl};
+
+}

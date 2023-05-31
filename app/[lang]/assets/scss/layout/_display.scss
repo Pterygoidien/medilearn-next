@@ -1,0 +1,247 @@
+/*width containers*/
+.w-full,
+.w-100 {
+    width: 100%;
+}
+
+.w-max-full,
+.w-max-100 {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.mid-screen {
+    width: 50vw;
+}
+
+/*margins and paddings*/
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+$rem: (
+    0:0rem,
+    1:0.25rem,
+    2:0.5rem,
+    3:0.75rem,
+    4:1rem,
+    5:1.25rem,
+    6:1.5rem,
+    7:1.75rem,
+    8:2rem,
+    9:2.25rem,
+    10:2.5rem,
+    11:2.75rem,
+    12:3rem,
+    13:3.5rem,
+
+);
+
+
+@each $key,
+$value in $rem {
+    .m-#{$key} {
+        margin: #{$value};
+    }
+
+    .mt-#{$key} {
+        margin-top: #{$value};
+    }
+
+    .mb-#{$key} {
+        margin-bottom: #{$value};
+    }
+
+    .ml-#{$key} {
+        margin-left: #{$value};
+    }
+
+    .mr-#{$key} {
+        margin-right: #{$value};
+    }
+
+    .mx-#{$key} {
+        margin-left: #{$value};
+        margin-right: #{$value};
+    }
+
+    .my-#{$key} {
+        margin-top: #{$value};
+        margin-bottom: #{$value};
+    }
+
+    .p-#{$key} {
+        padding: #{$value};
+    }
+
+    .pt-#{$key} {
+        padding-top: #{$value};
+    }
+
+    .pb-#{$key} {
+        padding-bottom: #{$value};
+    }
+
+    .pl-#{$key} {
+        padding-left: #{$value};
+    }
+
+    .pr-#{$key} {
+        padding-right: #{$value};
+    }
+
+    .px-#{$key} {
+        padding-left: #{$value};
+        padding-right: #{$value};
+    }
+
+    .py-#{$key} {
+        padding-top: #{$value};
+        padding-bottom: #{$value};
+    }
+}
+
+/* grid display */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+}
+
+/* flex display*/
+@import "./flex.scss";
+
+
+@each $n,
+$value in $rem {
+    .gap-#{$n} {
+        gap: #{$value};
+    }
+}
+
+
+
+
+/* Justify content*/
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/* Align items*/
+.items-start {
+    align-items: flex-start;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-baseline {
+    align-items: baseline;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+/* Align content*/
+.content-start {
+    align-content: flex-start;
+}
+
+.content-end {
+    align-content: flex-end;
+}
+
+.content-center {
+    align-content: center;
+}
+
+.content-between {
+    align-content: space-between;
+}
+
+.content-around {
+    align-content: space-around;
+}
+
+.content-evenly {
+    align-content: space-evenly;
+}
+
+/* Align self*/
+.self-start {
+    align-self: flex-start;
+}
+
+.self-end {
+    align-self: flex-end;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.self-baseline {
+    align-self: baseline;
+}
+
+.self-stretch {
+    align-self: stretch;
+}
+
+
+/*Displays*/
+.hidden {
+    visibility: hidden;
+}
+
+.no-display {
+    display: none;
+}
+
+@media screen and (max-width: $screen-md) {
+    .md\:invisible {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $screen-xl) {
+    .xl\:invisible {
+        display: none;
+    }
+}
+
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+.screen-reader-text {
+    display: none;
+}

@@ -1,0 +1,13 @@
+.course-item {
+    max-width:500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius:20px;
+    border:2px solid gray;
+    overflow: hidden;
+    &__content {
+        padding: 1em 2em;
+    }
+
+}
