@@ -51,7 +51,7 @@ const Browse = () => {
             <h2>
                 Parcourir les cours
             </h2>
-            <div className="browse-courselist flex justify-between">
+            <div className="browse-courselist flex items-stretch">
             {courseList.map((course) =>(
 
                 <CourseCard
